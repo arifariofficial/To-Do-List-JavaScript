@@ -1,0 +1,40 @@
+<h2>Array sorting</h2>
+<div class="step-text">
+<p>It's very common to store numbers and strings in <strong>arrays</strong>. But what happens if you need to put the numbers in order or arrange the strings alphabetically? The <code class="language-javascript">sort()</code> and <code class="language-javascript">reverse()</code> methods can be used to achieve the required results. In this topic, you will learn how to use these methods and discover how they work behind the scenes.</p><h5 id="arraysort">Array.sort()</h5><p>The <code class="language-javascript">sort()</code> method puts an array of strings in ascending order by default, but it behaves differently when the array contains numbers.</p><p>The below example shows the result of applying <code class="language-javascript">sort()</code> to an array of strings:</p><pre><code class="language-javascript">let fruits = ["Apple", "Banana", "Watermelon", "Grapes", "Pineapple", "Kiwi"];
+
+fruits.sort();
+console.log(fruits);
+
+// ['Apple', 'Banana', 'Grapes', 'Kiwi', 'Pineapple', 'Watermelon'];</code></pre><p>As you can see, the fruits in the array are sorted in alphabetical order as you would expect.</p><p>Now let's look at what happens if we apply <code class="language-javascript">sort()</code> to an array of numbers:</p><pre><code class="language-javascript">let numbers = [0, 10, 49, 115, 63, 59, 88, 23];
+
+numbers.sort();
+console.log(numbers);
+
+// [0, 10, 115, 23, 49, 59, 63, 88]</code></pre><p>As shown, the position of several of the numbers has changed, but the array is not sorted in ascending order. So why is this?</p><p>By default, the <code class="language-javascript">sort()</code> method sorts all elements and values as if they were strings. To be precise, the <code class="language-javascript">sort()</code> method converts the elements into strings and then compares them as sequences of <a href="https://unicode.org/faq/utf_bom.html" rel="noopener noreferrer nofollow" target="_blank">UTF-16</a> code units.</p><p>This can lead to some strange results when sorting numbers. For example, <code class="language-javascript">115</code> is placed before <code class="language-javascript">23</code> in the above code snippet because <code class="language-javascript">"1"</code> comes before <code class="language-javascript">"2"</code> in the Unicode order.</p><p>To solve this problem, let's deep dive into the <code class="language-javascript">sort()</code> method's syntax to discover what else can be accomplished with it.</p><h5 id="how-sort-works">How sort works</h5><p>The syntax of the <code class="language-javascript">sort()</code> method is as follows:</p><pre><code class="language-javascript">// Without argument
+sort()
+
+// Compare function
+sort(compareFunction)
+ 
+// Arrow function 
+sort((firstEle, secondEle) =&gt; {...})
+
+// Inline function (older syntax)
+sort(function compareFunction(firstEle, secondEle) {...})</code></pre><p>Let's see how the <code class="language-javascript">compareFunction</code><strong> </strong>works:</p><pre><code class="language-javascript">function compareFunction(firstEle, secondEle) {
+   return firstEle - secondEle;
+}
+
+let numbers = [0, 10, 49, 115, 63, 59, 88, 23];
+numbers.sort(compareFunction);
+
+console.log(numbers);  // [0, 10, 23, 49, 59, 63, 88, 115]</code></pre><p>In this example, we have defined our own function and passed it to the <code class="language-javascript">sort()</code> method's optional <code class="language-javascript">compareFunction</code> parameter. Now, when <code class="language-javascript">sort()</code> compares two values, it sends them to this <code class="language-javascript">compareFunction</code> and orders the numbers according to the returned values:</p><ul><li><p>If the return value of the <code class="language-javascript">compareFunction</code> is less than zero, the <code class="language-javascript">firstEle</code> is sorted before the <code class="language-javascript">secondEle</code>.</p></li><li><p>If the return value is greater than zero, the <code class="language-javascript">secondEle</code> is sorted before the <code class="language-javascript">firstEle</code>.</p></li><li><p>If the return value is zero, the positions of the <code class="language-javascript">firstEle</code> and the <code class="language-javascript">secondEle</code> are not changed.</p></li></ul><p>So, if you need to sort an array of numbers, you can utilize this <code class="language-javascript">compareFunction</code> (otherwise known as a <strong>comparator function</strong>).</p><p>It's also possible to use the simpler <strong>arrow function</strong> syntax (introduced in the ES2015 version of Javascript) to achieve the same result:</p><pre><code class="language-javascript">let numbers = [0, 10, 49, 115, 63, 59, 88, 23];
+numbers.sort((firstEle, secondEle) =&gt; firstEle - secondEle);
+
+console.log(numbers);  // [0, 10, 23, 49, 59, 63, 88, 115]</code></pre><h5 id="arrayreverse">Array.reverse()</h5><p>The <code class="language-javascript">reverse()</code> method does precisely what you would think — it reverses the order of the elements in an array. This means that the first and last elements are swapped, the second and second-last elements are swapped, and so on.</p><p>The below example illustrates how this works:</p><pre><code class="language-javascript">let arr = ["red", "orange", "blue", "green"];
+arr.reverse();
+console.log(arr); // ["green", "blue", "orange", "red"]</code></pre><p>Now, you already know how to sort an array of numbers in ascending order. But what if you want to put them in descending order instead? Fortunately, it's easy to do this by combining what you have learned in this topic:</p><pre><code class="language-javascript">let numbers = [0, 10, 49, 115, 63, 59, 88, 23];
+numbers.sort((firstEle, secondEle) =&gt; firstEle - secondEle);
+numbers.reverse();
+
+console.log(numbers);  // [115, 88, 63, 59, 49, 23, 10, 0]</code></pre><p>As you can see, the array is first sorted using the arrow function, and then <code class="language-javascript">reverse()</code> is applied to place the numbers in the opposite order. It's as simple as that!</p><h5 id="conclusion">Conclusion</h5><p>You now know that the elements of an array can be ordered alphabetically by using the <code class="language-javascript">sort()</code> method without an argument. And you've seen how to put an array of numbers in ascending order by passing a comparator function to <code class="language-javascript">sort()</code>. You also discovered that the <code class="language-javascript">reverse()</code> method places an array's elements in the opposite order.</p>
+</div>

@@ -1,0 +1,196 @@
+hyperskill_project:
+  id: 183
+  ide_files: https://cogniterra.org/media/attachments/lesson/25551/additional_files.json
+  is_template_based: false
+  use_ide: true
+update_date: "Fri, 23 Feb 2024 16:47:55 UTC"
+stages:
+  - id: 927
+    step: 13194
+    is_completed: true
+  - id: 928
+    step: 13195
+    is_completed: true
+  - id: 929
+    step: 13196
+    is_completed: true
+  - id: 930
+    step: 13197
+    is_completed: true
+topics:
+  0:
+    - title: Introduction to UI/UX
+      theory_id: 14603
+    - title: Layout grids
+      theory_id: 14922
+    - title: Interface elements
+      theory_id: 15253
+    - title: Fonts
+      theory_id: 15045
+    - title: Colors
+      theory_id: 14914
+    - title: Block-level elements
+      theory_id: 7271
+    - title: Inline elements
+      theory_id: 7518
+    - title: What is CSS
+      theory_id: 7678
+    - title: HTML attributes id and class
+      theory_id: 7527
+    - title: Connecting CSS to HTML
+      theory_id: 7418
+    - title: Basic syntax
+      theory_id: 7722
+    - title: CSS Selectors
+      theory_id: 7738
+    - title: Relative units
+      theory_id: 10671
+    - title: Absolute units
+      theory_id: 10605
+    - title: Introduction to Flexbox
+      theory_id: 11760
+    - title: Orientation and Display order
+      theory_id: 11768
+    - title: "Flexibility, growth and contraction ratio"
+      theory_id: 18859
+    - title: Axis alignment
+      theory_id: 11784
+    - title: Comments
+      theory_id: 7730
+    - title: Images
+      theory_id: 9237
+    - title: HTML basics
+      theory_id: 6434
+    - title: Tags and Attributes
+      theory_id: 7536
+    - title: HTML page structure
+      theory_id: 6491
+    - title: Comments
+      theory_id: 7502
+    - title: Position
+      theory_id: 11581
+    - title: Float
+      theory_id: 12697
+    - title: Clear
+      theory_id: 12705
+    - title: Margin and Padding
+      theory_id: 26903
+    - title: Positioning properties
+      theory_id: 8204
+    - title: Width and Height
+      theory_id: 8325
+    - title: Google Fonts
+      theory_id: 7844
+    - title: Using Fonts
+      theory_id: 15189
+    - title: Border
+      theory_id: 8355
+    - title: line-height
+      theory_id: 11153
+    - title: Text Alignment
+      theory_id: 11589
+    - title: Vertical-align
+      theory_id: 15198
+    - title: Opacity
+      theory_id: 11169
+    - title: Links
+      theory_id: 11834
+    - title: RGB
+      theory_id: 8819
+    - title: Intro to Lists
+      theory_id: 8178
+    - title: List style
+      theory_id: 11645
+    - title: Overflow
+      theory_id: 12454
+    - title: Display
+      theory_id: 21211
+    - title: Colors in CSS
+      theory_id: 7973
+    - title: z-index
+      theory_id: 11161
+    - title: Background
+      theory_id: 11670
+    - title: Links Style
+      theory_id: 19281
+    - title: Text shadow
+      theory_id: 10161
+    - title: "Headings, Paragraphs, Comments"
+      theory_id: 21203
+    - title: Images and Text
+      theory_id: 22148
+  1:
+    - title: Comments
+      theory_id: 8170
+    - title: DOM
+      theory_id: 8635
+    - title: Intro to HTML forms
+      theory_id: 6560
+    - title: Connecting JavaScript to HTML
+      theory_id: 7510
+    - title: Introduction to JavaScript
+      theory_id: 8016
+    - title: Writing first program
+      theory_id: 8154
+    - title: Multi-line programs
+      theory_id: 8162
+    - title: Declaring variables
+      theory_id: 8186
+    - title: Strings and numbers
+      theory_id: 8194
+    - title: Arithmetic operators
+      theory_id: 8372
+    - title: Functions
+      theory_id: 8388
+    - title: Defining functions
+      theory_id: 24012
+    - title: Anonymous function
+      theory_id: 26924
+    - title: Arrow Functions
+      theory_id: 8455
+    - title: Array
+      theory_id: 16141
+    - title: Array creation
+      theory_id: 16356
+    - title: JSON
+      theory_id: 6854
+    - title: Introduction to Objects
+      theory_id: 8588
+    - title: Null and Undefined
+      theory_id: 8564
+    - title: Boolean and Logical Operators
+      theory_id: 8471
+    - title: Type Conversion
+      theory_id: 8380
+    - title: Comparison Operators
+      theory_id: 8580
+    - title: Conditional Operators
+      theory_id: 8889
+    - title: Array sorting
+      theory_id: 16151
+    - title: Intro to DOM events
+      theory_id: 10857
+    - title: DOM methods
+      theory_id: 8662
+    - title: The "addEventListener" method
+      theory_id: 8723
+    - title: Modifying DOM
+      theory_id: 21549
+    - title: Advanced DOM methods
+      theory_id: 21560
+    - title: Increment and Decrement
+      theory_id: 9102
+    - title: "Loops: for and for...in"
+      theory_id: 9119
+  2:
+    - title: Pseudo-classes
+      theory_id: 9762
+    - title: Attribute selectors and Universal selector
+      theory_id: 12228
+    - title: Combinators
+      theory_id: 12236
+    - title: ClassList
+      theory_id: 11653
+  3:
+    - title: Starting with git
+      theory_id: 10894

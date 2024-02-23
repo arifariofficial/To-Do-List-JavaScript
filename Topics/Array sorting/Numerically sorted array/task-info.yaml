@@ -1,0 +1,13 @@
+type: code
+files:
+  - name: main.js
+    visible: true
+    text: "let arr = [2, 0, 100, 54, 66, 38];"
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/16157#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Wed, 21 Feb 2024 17:22:03 UTC"
+record: -1
+submission_language: javascript

@@ -1,0 +1,13 @@
+type: code
+files:
+  - name: main.js
+    visible: true
+    text: "let colors = ['green', 'red', 'yellow', 'orange', 'black'];"
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/16158#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Wed, 21 Feb 2024 17:27:12 UTC"
+record: -1
+submission_language: javascript
